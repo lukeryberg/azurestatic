@@ -1,43 +1,75 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
-    padding-top: 50px;
+    line-height: 1.6;
 }
+
 .container {
-    width: 80%;
+    max-width: 960px;
     margin: auto;
-    overflow: hidden;
+    padding: 0 20px;
 }
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+
+header {
+    text-align: center;
+    padding: 20px 0;
 }
+
+header h1 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+header p {
+    font-weight: 300;
+    color: #666;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
 p {
-    line-height: 1.5;
-    margin-bottom: 20px;
+    font-weight: 300;
+    color: #666;
 }
-.skills {
+
+footer {
+    text-align: center;
+    padding: 20px;
     background: #333;
     color: #fff;
-    padding: 15px 0;
 }
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-.skills ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-.contact {
-    margin-top: 20px;
-}
-a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+
+@media (max-width: 768px) {
+    .container, footer {
+        padding: 0 10px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    header p, section p, footer p {
+        font-size: 16px;
+    }
 }
