@@ -36,7 +36,10 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+.header-text {
+    text-align: center;
+    padding: 20px 0;
+}
 
 header h1 {
     margin-bottom: 5px;
