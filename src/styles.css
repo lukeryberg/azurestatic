@@ -21,8 +21,8 @@ body, html {
 }
 
 .header-icon {
-    height: 90px; /* Or the size you want your icon to be */
-    width: 90px; /* Keep the same as height for a square aspect ratio */
+    height: 190px; /* Or the size you want your icon to be */
+    width: 190px; /* Keep the same as height for a square aspect ratio */
     border-radius: 50%; /* Optional: if you want a circular icon */
     margin-right: 10px; /* Adds some space between the icon and the title */
     vertical-align: middle; /* Aligns the icon with the middle of the text */
