@@ -55,6 +55,31 @@
             <p><a href="https://www.linkedin.com/in/lukeryberg/">LinkedIn</p>
             <!-- More contact details -->
         </section>
+        <section id="Subscribe">
+            <h2>Subscribe to 24/7 IT support from me</h2>
+            <div id="paypal-button-container-P-7B127074SX275062LM5PBNDY"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=Acg5Ey2c4Ogmd0rX-7fkIzAVWMIzCBPIuOwKLE8qhlBOuSuK82dkn9WyS7eTY9d5earCmZ3HRUdllfUC&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-7B127074SX275062LM5PBNDY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-7B127074SX275062LM5PBNDY'); // Renders the PayPal button
+</script>
+            <!-- More contact details -->
+        </section>
     </div>
     <footer>
         <p>&copy; 2024 Luke Ryberg. All rights reserved.</p>
